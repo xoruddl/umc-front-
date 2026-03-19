@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Display 속성 비교 실습</title>
+    <style>
+      /* 기본 스타일 - 모든 비교 박스에 적용 */
+      .box {
+        width: 150px;
+        height: 100px;
+        margin: 10px;
+        padding: 20px;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+        border: 2px solid black;
+      }
+
+      /* 각 속성별 색상 및 디스플레이 지정 */
+      .block-box {
+        background-color: #e74c3c; /* 빨강 */
+        display: block;
+      }
+
+      .inline-box {
+        background-color: #3498db; /* 파랑 */
+        display: inline;
+      }
+
+      .inline-block-box {
+        background-color: #2ecc71; /* 초록 */
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Display 속성 실습</h1>
+
+    <h2>1. Display: block (빨강)</h2>
+    <div class="box block-box">Block 1</div>
+    <div class="box block-box">Block 2</div>
+
+    <div class="container">
+      <h2>2. Display: inline (파랑)</h2>
+      <span class="box inline-box">Inline 1</span>
+      <span class="box inline-box">Inline 2</span>
+    </div>
+
+    <div class="container">
+      <h2>3. Display: inline-block (초록)</h2>
+      <div class="box inline-block-box">Inline-Block 1</div>
+      <div class="box inline-block-box">Inline-Block 2</div>
+    </div>
+  </body>
+</html>
